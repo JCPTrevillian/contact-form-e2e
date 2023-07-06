@@ -21,3 +21,9 @@ Form Successfully Submitted
 \
 \
 ![form success ](https://github.com/JCPTrevillian/contact-form-e2e/assets/95890754/f32987e6-a7e9-42ef-8c2d-6137091eb866)
+\
+\
+![email](https://github.com/JCPTrevillian/contact-form-e2e/assets/95890754/1d0c206c-e497-45a4-b664-fc8aa0dc6040)
+\
+\
+This is the email I received when I asked my husband to fill out the contact form with his information. This is how the data from the form looks in an email. 
