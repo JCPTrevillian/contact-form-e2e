@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Complete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Message Me</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone number" required>
+            <textarea id="message" rows="4" placeholder="Message:"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "jenipang@yahoo.com", //elastic login 
+                Password : "F90ABDBB941038AF32957C741E02505878C0", //elastic password
+                To : 'jcptrevillian@gmail.com', //email where you want info to be sent 
+                From : document.getElementById("email").value, //users email as entered on form 
+                Subject : "New Contact Form Inquiry",
+                Body : "Name: " + document.getElementById("name").value //name form field value
+                    + "<br> Email: " + document.getElementById("email").value //email form field value
+                    + "<br> Pnone no: " + document.getElementById("phone").value //phone number form field value
+                    + "<br> Message: " + document.getElementById("message").value //message form field value 
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>
