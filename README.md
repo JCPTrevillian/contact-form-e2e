@@ -1,7 +1,10 @@
 # contact-form-e2e
 \
-This is an end to end contact form with NO BACKEND. I wanted to build one with just HTML and CSS and then build the same form with a Nodejs Backend to compare. 
-With this I used personalized SMTP and Elastic credentials to handle the data in lieu of what a backend would do. Once user clicks send, the data is sent to the 
+This is an end to end contact form with NO BACKEND. I wanted to build one with just HTML and CSS and then build the same form again but this time with a Nodejs Backend to compare. 
+The techdegree I earned is in full stack development, so the second iteration of this form with a backend would reflect my fullstack experience. 
+\
+\
+With this form I used personalized SMTP and Elastic credentials to handle the data in lieu of what a backend would do. Once user clicks send, the data is sent to the 
 email address I designated. This was a fun project because it involved requesting data from a user, providing assists (validator) and receiving user data needed. 
 \
 \
